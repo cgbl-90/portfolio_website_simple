@@ -21,16 +21,6 @@ body {
   margin: 2px;
   line-height: 3rem;
 }
-main {
-  max-width: 1024px;
-  position: relative;
-}
-@media screen and (min-width: 1024px) {
-  main {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 /* Dark and light mode */
 .dark-mode {
   background-color: var(--color--primary);
@@ -65,6 +55,11 @@ main {
   .grid-1x2 {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+  }
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
   }
 }
 .align_left_txt {
@@ -119,4 +114,7 @@ li:hover {
   border-bottom: 5px solid var(--clr--secondary);
   border-right: 5px solid var(--clr--secondary);
   transition: 0.7s;
+}
+.block_display {
+  display: block;
 }
