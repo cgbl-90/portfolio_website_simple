@@ -1,0 +1,122 @@
+:root {
+  /* Colors */
+  --clr--primary: black;
+  --clr--secondary: white;
+  --clr--acent: #ae9feb;
+  /* Sizes */
+  --sz--big: 5rem;
+  --sz--mid: 3rem;
+  --sz--small: 1.8rem;
+  --sz--mid-1: 1.8rem;
+  --sz--small-1: 1.3rem;
+}
+/* For all elements */
+::selection,
+mark,
+header {
+  background: var(--clr--acent);
+}
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 2px;
+  line-height: 3rem;
+}
+main {
+  max-width: 1024px;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  main {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* Dark and light mode */
+.dark-mode {
+  background-color: var(--color--primary);
+  color: var(--color--secondary);
+}
+.light-mode {
+  background-color: var(--color--secondary);
+  color: var(--color--primary);
+}
+.small_txt {
+  font-size: var(--sz--small);
+}
+.mid_txt {
+  font-size: var(--sz--mid);
+}
+.big_txt {
+  font-size: var(--sz--big);
+}
+@media screen and (min-width: 768px) {
+  .small_txt {
+    font-size: var(--sz--small-1);
+  }
+  .mid_txt {
+    font-size: var(--sz--mid-1);
+  }
+  .card {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .grid-1x2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+.align_left_txt {
+  text-align: left;
+}
+.align_right_txt {
+  text-align: right;
+}
+.align_center_txt {
+  text-align: center;
+}
+.grid {
+  display: grid;
+}
+.card {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+footer {
+  border: 1px solid var(--clr--acent);
+  box-shadow: 2px 2px 10px var(--clr--acent);
+}
+.links {
+  text-decoration: none;
+  color: var(--clr--primary);
+}
+.links:hover {
+  text-decoration: underline;
+  color: var(--clr--acent);
+}
+.links:link,
+.links:checked {
+  color: var(--clr--primary);
+}
+/* Menu */
+header {
+  right: 5px;
+  top: 5px;
+}
+li {
+  padding: 20px;
+  list-style: none;
+  display: inline;
+  color: var(--clr--secondary);
+  text-decoration: none;
+}
+li:hover {
+  border-bottom: 5px solid var(--clr--secondary);
+  border-right: 5px solid var(--clr--secondary);
+  transition: 0.7s;
+}
