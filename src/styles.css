@@ -39,6 +39,14 @@ body {
 .big_txt {
   font-size: var(--sz--big);
 }
+img {
+  padding-top: 100px;
+  width: 250px;
+  justify-self: center;
+}
+#cx {
+  width: 400px;
+}
 @media screen and (min-width: 768px) {
   .small_txt {
     font-size: var(--sz--small-1);
